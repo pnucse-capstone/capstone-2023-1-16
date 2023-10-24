@@ -17,6 +17,7 @@
       <ul>
         <li>Yolo v8과 OpenCV를 이용하여 객체를 직접 선택해 Image Segmentation하는 코드 구현</li>
         <li>Deepfillv2, MAT 모델 적용</li>
+        <li><a href = "mailto: (메일주소)">메일주소</a></li>
       </ul>
     </td>
   </tr>
@@ -28,6 +29,7 @@
       <ul>
         <li>마우스 클릭 로직 구현</li>
         <li>Inpainting 모델 서칭 및 LaMa 모델 적용</li>
+        <li><a href = "mailto: pnudpwls1103@pusan.ac.kr">pnudpwls1103@pusan.ac.kr</a></li>
       </ul>
     </td>
   </tr>

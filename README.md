@@ -62,9 +62,9 @@ source                           // 소스 모음 (Inpainting model clone 위치
 
 ## 5. 설치 및 사용법
 1. 구동환경 : pytorch 2.0.1 / CUDA 11.8 / anaconda 23.7.2
-2. 패키지 : requirements.txt 참고
-3. 설치
-- 모델 준비 : source 폴더 아래에 clone
+2. 패키지 : requirements.txt 참고  
+3. 설치  
+- 모델 준비 : source 폴더 아래에 clone  
 ```
 git clone https://github.com/advimman/lama.git
 git clone https://github.com/nipponjo/deepfillv2-pytorch.git
@@ -78,10 +78,10 @@ pip install -r requirements.txt
 conda install ninja
 ```
 
-- pretrained model : 파일 구조도를 참고하여 배치
-[LaMa](https://github.com/advimman/lama#links) : lama > big-lama > models 
-[Deepfillv2](https://drive.google.com/u/0/uc?id=1tvdQRmkphJK7FYveNAKSMWC6K09hJoyt&export=download)  
-[MAT](https://mycuhk-my.sharepoint.com/personal/1155137927_link_cuhk_edu_hk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2F1155137927%5Flink%5Fcuhk%5Fedu%5Fhk%2FDocuments%2FRelease%2FMAT&ga=1)  
+- pretrained model : 파일 구조도를 참고하여 배치  
+[LaMa](https://github.com/advimman/lama#links) (https://github.com/advimman/lama)  
+[Deepfillv2](https://drive.google.com/u/0/uc?id=1tvdQRmkphJK7FYveNAKSMWC6K09hJoyt&export=download) (https://github.com/nipponjo/deepfillv2-pytorch)   
+[MAT](https://mycuhk-my.sharepoint.com/personal/1155137927_link_cuhk_edu_hk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2F1155137927%5Flink%5Fcuhk%5Fedu%5Fhk%2FDocuments%2FRelease%2FMAT&ga=1) (https://github.com/fenglinglwb/mat)  
 
 4. 사용법
 ```

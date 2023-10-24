@@ -85,6 +85,6 @@ conda install ninja
 
 4. 사용법
 ```
-python modi.py <<Inpainting Model 이름>>
+python main.py <<Inpainting Model 이름>>
 ```
 Inpainting Model 이름 : LAMA, DEEPFILLV2, MAT 중 하나를 적는다.

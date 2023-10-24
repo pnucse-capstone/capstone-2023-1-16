@@ -44,7 +44,7 @@ source                           // 소스 모음 (Inpainting model clone 위치
 ├── bin                          // main program 소스 폴더
 │   ├── Enum.py                      // Enum
 │   ├── main.py                      // main 소스 파일
-│   └── yolov8n-seg.pt               // YOLOv8 segmentation pretrained model (다운로드 해야 함)
+│   └── yolov8n-seg.pt               // YOLOv8 segmentation pretrained model
 ├── deepfillv2                       // Inpainting model : deepfillv2
 │   └── pretrained                      // pretrained model 폴더
 │       └── states_pt_places2.pth         // deepfillv2 pretrained model (다운로드 해야 함)
@@ -55,7 +55,7 @@ source                           // 소스 모음 (Inpainting model clone 위치
 │       └── config.yaml                   // lama config 파일
 ├── MAT                              // Inpainting model : MAT
 │   └── pretrained                      // pretrained model 폴더
-│       └── Places_512.pkl                // lama pretrained model (다운로드 해야 함)
+│       └── Places_512.pkl                // MAT pretrained model (다운로드 해야 함)
 └── requirements.txt                // 패키치 설치 파일
 ```
 ## 4. 시연 영상

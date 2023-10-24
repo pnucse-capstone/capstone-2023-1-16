@@ -37,46 +37,53 @@
 ### 전체 구성도
 ![image](https://github.com/pnucse-capstone/capstone-2023-1-16/assets/68144657/cfe965d4-b00c-496b-ac3d-d6914bca6927)
 
+### 파일 구조
+main 소스 파일 위치와 pretrained model 위치를 명시해놓음
+```
+source                           // 소스 모음 (Inpainting model clone 위치)
+├── bin                          // main program 소스 폴더
+│   ├── Enum.py                      // Enum
+│   ├── main.py                      // main 소스 파일
+│   └── yolov8n-seg.pt               // YOLOv8 segmentation pretrained model (다운로드 해야 함)
+├── deepfillv2                       // Inpainting model : deepfillv2
+│   └── pretrained                      // pretrained model 폴더
+│       └── states_pt_places2.pth         // deepfillv2 pretrained model (다운로드 해야 함)
+├── lama                             // Inpainting model : lama
+│   └── big-lama                        // pretrained model 폴더
+│       └── models                     
+│           └── best.ckpt                 // lama pretrained model (다운로드 해야 함)
+│       └── config.yaml                   // lama config 파일
+├── MAT                              // Inpainting model : MAT
+│   └── pretrained                      // pretrained model 폴더
+│       └── Places_512.pkl                // lama pretrained model (다운로드 해야 함)
+└── requirements.txt                // 패키치 설치 파일
+```
 ## 4. 시연 영상
 
 ## 5. 설치 및 사용법
-0. pretrained model 준비
-1. 구동환경 : pytorch 2.0.1 / CUDA 11.8
-2. 패키지
-- pyyaml 
-- tqdm
-- numpy
-- easydict
-- scikit-image
-- opencv-python
-- tensorflow
-- joblib
-- matplotlib
-- pandas
-- albumentations
-- hydra-core
-- pytorch-lightning
-- tabulate
-- kornia
-- webdataset
-- packaging
-- future
-- scipy
-- click
-- requests
-- pyspng
-- Pillow
-- tensorboard
-- ninja
-- imageio-ffmpeg
-- timm
-- psutil
-- scikit-learn
-- Pillow
-- tensorboard
-- pyyaml
+1. 구동환경 : pytorch 2.0.1 / CUDA 11.8 / anaconda 23.7.2
+2. 패키지 : requirements.txt 참고
+3. 설치
+- 모델 준비 : source 폴더 아래에 clone
+```
+git clone https://github.com/advimman/lama.git
+git clone https://github.com/nipponjo/deepfillv2-pytorch.git
+git clone https://github.com/fenglinglwb/MAT.git
+```
+레포지토리의 폴더에 있는 파일 복사 붙여넣기
 
-3. 사용법  
+- 패키지 설치
+```
+pip install -r requirements.txt
+conda install ninja
+```
+
+- pretrained model : 파일 구조도를 참고하여 배치
+[LaMa](https://github.com/advimman/lama#links) : lama > big-lama > models 
+[Deepfillv2](https://drive.google.com/u/0/uc?id=1tvdQRmkphJK7FYveNAKSMWC6K09hJoyt&export=download)  
+[MAT](https://mycuhk-my.sharepoint.com/personal/1155137927_link_cuhk_edu_hk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2F1155137927%5Flink%5Fcuhk%5Fedu%5Fhk%2FDocuments%2FRelease%2FMAT&ga=1)  
+
+4. 사용법
 ```
 python modi.py <<Inpainting Model 이름>>
 ```

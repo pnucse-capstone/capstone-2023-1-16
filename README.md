@@ -17,7 +17,7 @@
       <ul>
         <li>Yolo v8과 OpenCV를 이용하여 객체를 직접 선택해 Image Segmentation하는 코드 구현</li>
         <li>Deepfillv2, MAT 모델 적용</li>
-        <li><a href = "mailto: (메일주소)">메일주소</a></li>
+        <li><a href = "mailto: chhj0319@pusan.ac.kr">chhj0319@pusan.ac.kr</a></li>
       </ul>
     </td>
   </tr>

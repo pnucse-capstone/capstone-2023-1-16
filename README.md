@@ -61,6 +61,9 @@ source                           // 소스 모음 (Inpainting model clone 위치
 └── requirements.txt                // 패키치 설치 파일
 ```
 ## 4. 시연 영상
+<!--[![영상 이름](유튜브 영상 썸네일 URL)](유투브 영상 URL)-->
+[2023년 전기 졸업과제 16 드루와 유니티의 숲](https://youtu.be/xKZL1p597Bo?si=Z2mmg_SCDimTp5Jr)
+![2023년 전기 졸업과제 16 드루와 유니티의 숲 유튜브 썸네일](http://img.youtube.com/vi/xKZL1p597Bo/0.jpg)
 
 ## 5. 설치 및 사용법
 1. 구동환경 : pytorch 2.0.1 / CUDA 11.8 / anaconda 23.7.2
